@@ -24,3 +24,4 @@ class Calculator:
     def _validate_inputs(self, a, b):
         if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
             raise TypeError("Inputs must be integers or floats.")
+    print("")

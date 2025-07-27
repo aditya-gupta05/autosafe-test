@@ -15,6 +15,10 @@ def test_multiply():
 def test_divide():
     assert calculator.divide(10, 2) == 5
 
+def test():
+    with pytest.raises(ValueError, match="Division by zero is not allowed."):
+        calculator.divide(10, 0)
+
 def test_divide_by_zero():
     with pytest.raises(ValueError, match="Division by zero is not allowed."):
         calculator.divide(10, 0)

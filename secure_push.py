@@ -43,7 +43,7 @@ def run_security_review():
         print("No code changes detected.")
         return True
 
-    print("🧠 Sending code diff to GPT-3.5 for review...")
+    print(" Sending code diff to GPT-3.5 for review...")
     review = ask_gpt(diff)
 
     if review == "OK":
